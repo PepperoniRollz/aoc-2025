@@ -1,7 +1,6 @@
 package aoc
 
 import (
-	"fmt"
 	"strconv"
 
 	"github.com/pepperonirollz/aoc-2025/utils"
@@ -9,13 +8,11 @@ import (
 
 func Part1(path string) int64 {
 	data, _ := utils.Parse(path)
-	var sum int64 = 50
 	answer := 0
 	loc := 50
 	for _, line := range data {
 		direction := line[0]
 		distance, _ := strconv.Atoi(line[1:])
-		fmt.Println(direction, distance, sum)
 		switch direction {
 		case 'R':
 			for range distance {
@@ -40,13 +37,11 @@ func Part1(path string) int64 {
 
 func Part2(path string) int64 {
 	data, _ := utils.Parse(path)
-	var sum int64 = 50
 	answer := 0
 	loc := 50
 	for _, line := range data {
 		direction := line[0]
 		distance, _ := strconv.Atoi(line[1:])
-		fmt.Println(direction, distance, sum)
 		switch direction {
 		case 'R':
 			for range distance {
