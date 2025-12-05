@@ -24,4 +24,10 @@ func main() {
 	fmt.Printf("Day 3 - Part 1: %d\n", day3Part1Result)
 	fmt.Printf("Day 3 - Part 2: %d\n", day3Part2Result)
 
+	day4Part1Result := aoc.Day4Part1("inputs/day4.txt")
+	day4Part2Result := aoc.Day4Part2("inputs/day4.txt")
+
+	fmt.Printf("Day 4 - Part 1: %d\n", day4Part1Result)
+	fmt.Printf("Day 4 - Part 2: %d\n", day4Part2Result)
+
 }
